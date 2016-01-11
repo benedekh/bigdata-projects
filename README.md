@@ -2,6 +2,8 @@
 Student projects in Big Data field, during my studies at Budapest University of Technology and Economics (BME).
 All the projects were homework assignments, and they were implemented by me.
 
+Comments and suggestions are warmly welcome.
+
 # Projects
 ## Flight data analysis
 
@@ -31,7 +33,7 @@ You should use Spark 1.5.1. for Hadoop 2.6. I downloaded a pre-built version [he
 
 To compile the source code of the implementation, you should use Maven:
 
-```
+```bash
 cd hu.bme.bigdata.homework.spark.flight2
 
 mvn clean
@@ -43,7 +45,7 @@ The compiled jar (spark.flight2-0.0.1-SNAPSHOT.jar) is available in the *target*
 
 To run from the command line:
 
-```
+```bash
 cd target
 
 java -jar spark.flight2-0.0.1-SNAPSHOT.jar --home <Spark installation directory> --data <2008.csv path> --partitions <number of partitions>
@@ -58,7 +60,7 @@ I used *Cloudera QuickStart 5.4.2.0* virtual machine image for VirtualBox, you c
 
 To compile the source code of the homework assignment:
 
-```
+```bash
 cd hu.bme.bigdata.homework.mapreduce.flight2
 
 javac -cp /usr/lib/hadoop/*:/usr/lib/hadoop-mapreduce/* hu/bme/bigdata/homework/mapreduce/flight2/*.java hu/bme/bigdata/homework/mapreduce/flight2/mappers/*.java hu/bme/bigdata/homework/mapreduce/flight2/reducers/*.java -d build -Xlint
@@ -68,7 +70,7 @@ jar -cvf demo.jar -C build/ .
 
 The *demo.jar* is the compiled jar, that should be run on hadoop.
 
-```
+```bash
 hadoop jar demo.jar hu.bme.bigdata.homework.mapreduce.flight2.MapReduceApplication <2008.csv path on HDFS> <output folder path on HDFS>
 ```
 
@@ -100,7 +102,7 @@ You should use Spark 1.5.1. for Hadoop 2.6. I downloaded a pre-built version [he
 
 To compile the source code of the implementation, you should use Maven:
 
-```
+```bash
 cd hu.bme.bigdata.homework.spark.flight3
 
 mvn clean
@@ -112,7 +114,7 @@ The compiled jar (spark.flight3-0.0.1-SNAPSHOT.jar) is available in the *target*
 
 To run from the command line:
 
-```
+```bash
 cd target
 
 java -jar spark.flight3-0.0.1-SNAPSHOT.jar --home <Spark installation directory> --data <2008.csv path> --partitions <number of partitions>
