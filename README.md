@@ -125,7 +125,7 @@ The parameters are self explaining, though the partitions parameter should be se
 
 I benchmarked the two Spark solutions for the questions, and the Java MapReduce implementation for the first question.
 
-The benchmarking was done on a computer containing Intel Core i7-4700MQ@2.4GHz CPU, 8 GB RAM. 
+The benchmarking was done on a computer containing Intel Core i7-4700MQ @ 2.4GHz CPU, 8 GB RAM. 
 
 Spark was run on a VirtualBox virtual machine using 4 CPU cores and 5 GB RAM. The Spark implementations of assigments were run using 4 partitions as a parameter. The Spark solution of the 1st assigment is called **Flight2-Spark**, the 2nd assignment is called **Flight3-Spark** on the figure.
 
