@@ -1,6 +1,6 @@
 # bigdata-projects
 Student projects in Big Data field, during my studies at Budapest University of Technology and Economics (BME).
-All the projects were homework assignments, and they were implemented by me.
+All the projects were homework assignments which were implemented by me.
 
 Comments and suggestions are warmly welcome.
 
@@ -51,7 +51,7 @@ cd target
 java -jar spark.flight2-0.0.1-SNAPSHOT.jar --home <Spark installation directory> --data <2008.csv path> --partitions <number of partitions>
 ```
 
-The parameters are self explaining, though the partitions parameter should be set for the number of cores, your computer CPU has (use *--partitions 1*, if you are not sure how many cores your CPU has).
+The parameters are self-explaining, though the partitions parameter should be set for the number of cores, your computer CPU has (use *--partitions 1*, if you are not sure how many cores your CPU has).
 
 
 #### Java MapReduce
@@ -120,7 +120,7 @@ cd target
 java -jar spark.flight3-0.0.1-SNAPSHOT.jar --home <Spark installation directory> --data <2008.csv path> --partitions <number of partitions>
 ```
 
-The parameters are self explaining, though the partitions parameter should be set for the number of cores, your computer CPU has (use *--partitions 1*, if you are not sure how many cores your CPU has).
+The parameters are self-explaining, though the partitions parameter should be set for the number of cores, your computer CPU has (use *--partitions 1*, if you are not sure how many cores your CPU has).
 
 
 ### Benchmark
