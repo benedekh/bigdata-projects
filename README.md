@@ -13,7 +13,7 @@ The data are in the folder called [flight](https://github.com/benedekh/bigdata-p
 Variable descriptions of the data:
 
 | |Name|Description|
-|-|----|-----------|
+|---|----|-----------|
 |1|Year|1987-2008|
 |2|Month|1-12|
 |3|DayofMonth|1-31|
