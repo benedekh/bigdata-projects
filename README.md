@@ -1,6 +1,8 @@
 # bigdata-projects#datasets
 These are the datasests I used for the various student projects in Big Data field, during my studies at Budapest University of Technology and Economics (BME).
 
+**This repository uses large files. Please consider integrating [Git LFS](https://git-lfs.github.com/) into your Git workflow as well!**
+
 # Projects
 ## Flight data analysis
 
