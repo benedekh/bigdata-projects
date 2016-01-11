@@ -2,7 +2,9 @@
 Student projects in Big Data field, during my studies at Budapest University of Technology and Economics (BME).
 All the projects were homework assignments which were implemented by me.
 
-Comments and suggestions are warmly welcome.
+**Comments and suggestions are warmly welcome.**
+
+**This repository uses large files. Please consider integrating [Git LFS](https://git-lfs.github.com/) into your Git workflow as well! (Track *.7z files.)**
 
 # Projects
 ## Flight data analysis
@@ -13,7 +15,7 @@ Flight records in USA are stored and some of them are made available for researc
 
 During a practical course called 'Big Data Analytics Tools with Open-Source Platforms' at BME we had a homework assignment which contained two questions. The questions had to be answered by implementing a data analysis chain, that retrieves the neccesary information from the input files. We could use several technologies from the Hadoop Framework. I used Spark and native Java MapReduce.
 
-We had to work with the dataset of year 2008.
+**We had to work with the dataset of year 2008, that has been stored on the [datasets branch](https://github.com/benedekh/bigdata-projects/tree/datasets) of this as well.**
 
 ### Question #1
 
@@ -125,7 +127,9 @@ The parameters are self-explaining, though the partitions parameter should be se
 
 ### Benchmark
 
-I benchmarked the two Spark solutions for the questions, and the Java MapReduce implementation for the first question.
+I benchmarked the two Spark solutions for the questions, and the Java MapReduce implementation for the first question. 
+
+_The input data was the **2008.csv**, that is available in a compressed archive [here](https://github.com/benedekh/bigdata-projects/tree/datasets) in the repository, and [here](http://stat-computing.org/dataexpo/2009/the-data.html) on the original website._
 
 The benchmarking was done on a computer containing Intel Core i7-4700MQ @ 2.4GHz CPU, 8 GB RAM. 
 
