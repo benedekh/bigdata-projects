@@ -72,7 +72,7 @@ The *demo.jar* is the compiled jar, that should be run on hadoop.
 hadoop jar demo.jar hu.bme.bigdata.homework.mapreduce.flight2.MapReduceApplication <2008.csv path on HDFS> <output folder path on HDFS>
 ```
 
-The output of the script is at *<output folder path on HDFS>-result* folder (pay attention to the *-result* prefix).
+The output of the script is at *[output folder path on HDFS]-result* folder (pay attention to the *-result* prefix).
 
 
 ### Question #2
@@ -83,7 +83,7 @@ Winter is between 1st November and 7th March. Other dates belong to summer.
 
 ### Answer #2
 
-|<SEASON>|<NUMBER OF DELAYS>|<NUMBER OF RECORDS>|
+|SEASON|NUMBER OF DELAYS|NUMBER OF RECORDS|
 |--------|------------------|-------------------|
 |SUMMER|1894499|4554528|
 |WINTER|1085005|2317766|
@@ -132,3 +132,4 @@ Spark was run on a VirtualBox virtual machine using 4 CPU cores and 5 GB RAM. Th
 Java MapReduce was run on the Cloudera VM using 4 CPU cores and 5 GB RAM. The Java MapReduce solution of the 1st assigment is called **Flight2-MR** on the figure.
 
 [![](images/benchmark.png)](images/benchmark.png)
+
