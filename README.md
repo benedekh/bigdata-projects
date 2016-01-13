@@ -13,7 +13,7 @@ All the projects were homework assignments which were implemented by me.
 
 Flight records in USA are stored and some of them are made available for research purposes at [Statistical Computing](http://stat-computing.org/dataexpo/2009/the-data.html). The data are separated by year from 1987 to 2008. The attributes include the common properties a flight record have (e.g. date, origin and destination airports, air time, scheduled and actual departure and arrival times, etc).
 
-During a practical course called 'Big Data Analytics Tools with Open-Source Platforms' at BME we had a homework assignment which contained two questions. The questions had to be answered by implementing a data analysis chain, that retrieves the neccesary information from the input files. We could use several technologies from the Hadoop Framework. I used Spark and native Java MapReduce.
+During a practical course called 'Big Data Analytics Tools with Open-Source Platforms' at BME we had a homework assignment which contained two questions. The questions had to be answered by implementing a data analysis chain, that retrieves the neccesary information from the input files. We could use several technologies from the Hadoop Framework. I used Apache Spark™ and native Java MapReduce.
 
 **We had to work with the dataset of year 2008, that has been stored on the [datasets branch](https://github.com/benedekh/bigdata-projects/tree/datasets) of this as well.**
 
@@ -27,11 +27,11 @@ During a practical course called 'Big Data Analytics Tools with Open-Source Plat
 
 According to the dataset of year 2008.
 
-I used Spark and Java MapReduce to answer the question. The Spark solution is avaiable [here](https://github.com/benedekh/bigdata-projects/tree/master/hu.bme.bigdata.homework.spark.flight2/), while the Java MapReduce solution is available [here](https://github.com/benedekh/bigdata-projects/tree/master/hu.bme.bigdata.homework.mapreduce.flight2/).
+I used Apache Spark™ and Java MapReduce to answer the question. The Apache Spark™ solution is avaiable [here](https://github.com/benedekh/bigdata-projects/tree/master/hu.bme.bigdata.homework.spark.flight2/), while the Java MapReduce solution is available [here](https://github.com/benedekh/bigdata-projects/tree/master/hu.bme.bigdata.homework.mapreduce.flight2/).
 
-#### Spark
+#### Apache Spark™
 
-You should use Spark 1.5.1. for Hadoop 2.6. I downloaded a pre-built version [here](http://spark.apache.org/downloads.html), and I used Spark in a standanlone mode, without Hadoop.
+You should use Apache Spark™ 1.5.1. for Hadoop 2.6. I downloaded a pre-built version [here](http://spark.apache.org/downloads.html), and I used Apache Spark™ in a standanlone mode, without Hadoop.
 
 To compile the source code of the implementation, you should use Maven:
 
@@ -96,11 +96,11 @@ Winter is between 1st November and 7th March. Other dates belong to summer.
 
 According to the dataset of year 2008.
 
-I used Spark to answer the question. The Spark solution is avaiable [here](https://github.com/benedekh/bigdata-projects/tree/master/hu.bme.bigdata.homework.spark.flight3/).
+I used Apache Spark™ to answer the question. The Apache Spark™ solution is avaiable [here](https://github.com/benedekh/bigdata-projects/tree/master/hu.bme.bigdata.homework.spark.flight3/).
 
-#### Spark
+#### Apache Spark™
 
-You should use Spark 1.5.1. for Hadoop 2.6. I downloaded a pre-built version [here](http://spark.apache.org/downloads.html), and I used Spark in a standanlone mode, without Hadoop.
+You should use Apache Spark™ 1.5.1. for Hadoop 2.6. I downloaded a pre-built version [here](http://spark.apache.org/downloads.html), and I used Apache Spark™ in a standanlone mode, without Hadoop.
 
 To compile the source code of the implementation, you should use Maven:
 
@@ -119,7 +119,7 @@ To run from the command line:
 ```bash
 cd target
 
-java -jar spark.flight3-0.0.1-SNAPSHOT.jar --home <Spark installation directory> --data <2008.csv path> --partitions <number of partitions>
+java -jar spark.flight3-0.0.1-SNAPSHOT.jar --home <Apache Spark™ installation directory> --data <2008.csv path> --partitions <number of partitions>
 ```
 
 The parameters are self-explaining, though the partitions parameter should be set for the number of cores, your computer CPU has (use *--partitions 1*, if you are not sure how many cores your CPU has).
@@ -127,13 +127,13 @@ The parameters are self-explaining, though the partitions parameter should be se
 
 ### Benchmark
 
-I benchmarked the two Spark solutions for the questions, and the Java MapReduce implementation for the first question. 
+I benchmarked the two Apache Spark™ solutions for the questions, and the Java MapReduce implementation for the first question. 
 
 _The input data was the **2008.csv**, that is available in a compressed archive [here](https://github.com/benedekh/bigdata-projects/tree/datasets) in the repository, and [here](http://stat-computing.org/dataexpo/2009/the-data.html) on the original website._
 
 The benchmarking was done on a computer containing Intel Core i7-4700MQ @ 2.4GHz CPU, 8 GB RAM. 
 
-Spark was run on a VirtualBox virtual machine using 4 CPU cores and 5 GB RAM. The Spark implementations of assigments were run using 4 partitions as a parameter. The Spark solution of the 1st assigment is called **Flight2-Spark**, the 2nd assignment is called **Flight3-Spark** on the figure.
+Apache Spark™ was run on a VirtualBox virtual machine using 4 CPU cores and 5 GB RAM. The Apache Spark™ implementations of assigments were run using 4 partitions as a parameter. The Apache Spark™ solution of the 1st assigment is called **Flight2-Spark**, the 2nd assignment is called **Flight3-Spark** on the figure.
 
 Java MapReduce was run on the Cloudera VM using 4 CPU cores and 5 GB RAM. The Java MapReduce solution of the 1st assigment is called **Flight2-MR** on the figure.
 
