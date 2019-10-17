@@ -92,6 +92,16 @@
 		        <artifactId>protobuf-java</artifactId>
 		        <version>3.4.0</version>
 		    </dependency>
+		    <dependency>
+		        <groupId>org.lz4</groupId>
+      	                <artifactId>lz4-java</artifactId>
+		        <version>1.6.0</version>
+            	    </dependency>
+		    <dependency>
+			<groupId>io.netty</groupId>
+			<artifactId>netty-all</artifactId>
+			<version>4.1.42.Final</version>
+		    </dependency>
 		</dependencies>
 	</dependencyManagement>
 	<dependencies>
